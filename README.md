@@ -20,6 +20,7 @@ Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
 
 - Added `OsisID`.
 - Added `TotalChapters`.
+- Added `Volume` of either `NT` (New Testament) or `OT` (Old Testament).
 
 ### Chapters.csv
 
