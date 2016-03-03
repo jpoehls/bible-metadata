@@ -25,7 +25,7 @@ Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
 
 Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-][1].
 
-- Added `TotalVerses` and `WordCount` calculated from `Verses.csv` in same repository.
+- Added `TotalVerses` and `WordCountKjv` calculated from `Verses.csv` in same repository.
 - Added `ReadingTimeInSecondsKjvScourby` calculated from the KJV narrated by Alexander Scourby (Voice Only, MP3). 
 
 # License
