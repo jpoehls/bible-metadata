@@ -1,0 +1,67 @@
+BookID,OsisID,BookName,TotalChapters
+1,Gen,Genesis,50
+2,Exod,Exodus,40
+3,Lev,Leviticus,27
+4,Num,Numbers,36
+5,Deut,Deuteronomy,34
+6,Josh,Joshua,24
+7,Judg,Judges,21
+8,Ruth,Ruth,4
+9,1Sam,1 Samuel,31
+10,2Sam,2 Samuel,24
+11,1Kgs,1 Kings,22
+12,2Kgs,2 Kings,25
+13,1Chr,1 Chronicles,29
+14,2Chr,2 Chronicles,36
+15,Ezra,Ezra,10
+16,Neh,Nehemiah,13
+17,Esth,Esther,10
+18,Job,Job,42
+19,Ps,Psalms,150
+20,Prov,Proverbs,31
+21,Eccl,Ecclesiastes,12
+22,Song,Song of Solomon,8
+23,Isa,Isaiah,66
+24,Jer,Jeremiah,52
+25,Lam,Lamentations,5
+26,Ezek,Ezekiel,48
+27,Dan,Daniel,12
+28,Hos,Hosea,14
+29,Joel,Joel,3
+30,Amos,Amos,9
+31,Obad,Obadiah,1
+32,Jonah,Jonah,4
+33,Mic,Micah,7
+34,Nah,Nahum,3
+35,Hab,Habakkuk,3
+36,Zeph,Zephaniah,3
+37,Hag,Haggai,2
+38,Zech,Zechariah,14
+39,Mal,Malachi,4
+40,Matt,Matthew,28
+41,Mark,Mark,16
+42,Luke,Luke,24
+43,John,John,21
+44,Acts,Acts,28
+45,Rom,Romans,16
+46,1Cor,1 Corinthians,16
+47,2Cor,2 Corinthians,13
+48,Gal,Galatians,6
+49,Eph,Ephesians,6
+50,Phil,Philippians,4
+51,Col,Colossians,4
+52,1Thess,1 Thessalonians,5
+53,2Thess,2 Thessalonians,3
+54,1Tim,1 Timothy,6
+55,2Tim,2 Timothy,4
+56,Titus,Titus,3
+57,Phim,Philemon,1
+58,Heb,Hebrews,13
+59,Jas,James,5
+60,1Pet,1 Peter,5
+61,2Pet,2 Peter,3
+62,1John,1 John,5
+63,2John,2 John,1
+64,3John,3 John,1
+65,Jude,Jude,1
+66,Rev,Revelation,22
