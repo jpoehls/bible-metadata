@@ -31,3 +31,5 @@ Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
 # License
 
 Public domain.
+
+[1]: https://github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
