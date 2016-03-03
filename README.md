@@ -1,7 +1,7 @@
 # Bible Metadata
 
 My collection of Bible metadata in the form of CSV files.
-Focused on basic book, chapter, and verse numbers. See sources below
+Focused on just the data I need for my own hobbies. See sources below
 for more extensive Bible metadata.
 
 Chapter and verse counts are based on the KJV.
