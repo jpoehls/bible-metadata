@@ -72,9 +72,31 @@ func genBooksTS() {
 
 	tmpl, err := template.New("").Parse(`module bibleMetadata {
       class Book {
+		    /**
+			 * Gets the numeric ID of the book.
+			 *
+			 * The ID is a sequential integer matching
+			 * the position of the book in the KJV Bible.
+			 * E.g., 1 for Genesis and 66 for Revelation
+			 */
             id: number;
+			
+			/**
+			 * Gets the OSIS ID of the book.
+			 * E.g., "Gen" for Genesis
+			 */
             osisId: string;
+			
+			/**
+			 * Gets the name of the book.
+			 * E.g., "Genesis"
+			 */
             name: string;
+			
+			/**
+			 * Gets the total number of chapters
+			 * in the book.
+			 */
             chapters: number;
 
             constructor(id: number, osisId: string, name: string, chapters: number) {
