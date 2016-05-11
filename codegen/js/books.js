@@ -12,7 +12,6 @@ var bibleMetadata;
     function allBooks() {
         return [
             new Book(1, "Gen", "Genesis", 50),
-            new Book(1, "Gen", "Genesis", 50),
             new Book(2, "Exod", "Exodus", 40),
             new Book(3, "Lev", "Leviticus", 27),
             new Book(4, "Num", "Numbers", 36),
