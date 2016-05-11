@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outDir": "../js",
+        "noImplicitReturns": true,
+        "noImplicitUseStrict": true
+    },
+    "files": [
+        "books.ts"
+    ]
+}

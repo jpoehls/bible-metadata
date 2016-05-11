@@ -1,13 +1,17 @@
-
-var Book = (function () {
-    function Book(id, osisID, name, chapters) {
-        this.id = id;
-        this.osisID = osisID;
-        this.name = name;
-        this.chapters = chapters;
-    }
-    Book.all = function () {
+var bibleMetadata;
+(function (bibleMetadata) {
+    var Book = (function () {
+        function Book(id, osisId, name, chapters) {
+            this.id = id;
+            this.osisId = osisId;
+            this.name = name;
+            this.chapters = chapters;
+        }
+        return Book;
+    }());
+    function allBooks() {
         return [
+            new Book(1, "Gen", "Genesis", 50),
             new Book(1, "Gen", "Genesis", 50),
             new Book(2, "Exod", "Exodus", 40),
             new Book(3, "Lev", "Leviticus", 27),
@@ -74,7 +78,7 @@ var Book = (function () {
             new Book(64, "3John", "3 John", 1),
             new Book(65, "Jude", "Jude", 1),
             new Book(66, "Rev", "Revelation", 22),
-            ];
-    };
-    return Book;
-}());
+        ];
+    }
+    bibleMetadata.allBooks = allBooks;
+})(bibleMetadata || (bibleMetadata = {}));

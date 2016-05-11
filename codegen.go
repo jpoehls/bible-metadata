@@ -6,12 +6,14 @@ import (
 	"io"
 	"log"
 	"os"
+	"os/exec"
 	"strconv"
 	"text/template"
 )
 
 func main() {
-	genBooks()
+	genBooksJS()
+	genBooksTS()
 }
 
 type book struct {
@@ -52,33 +54,51 @@ func getBooks() []book {
 	return books
 }
 
-func genBooks() {
+func genBooksJS() {
+	
+	cmd := exec.Command("tsc", "-p", "codegen/ts")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	
+	err := cmd.Run()
+	if err != nil {
+		panic(err)
+	}
+}
 
+func genBooksTS() {
+	
 	books := getBooks()
 
-	tmpl, err := template.New("").Parse(`
-var Book = (function () {
-    function Book(id, osisID, name, chapters) {
-        this.id = id;
-        this.osisID = osisID;
-        this.name = name;
-        this.chapters = chapters;
-    }
-    Book.all = function () {
-        return [
-            {{ range . -}}
-            new Book({{.ID}}, "{{.OsisID}}", "{{.Name}}", {{.Chapters}}),
-            {{ end -}}
-        ];
-    };
-    return Book;
-}());
+	tmpl, err := template.New("").Parse(`module bibleMetadata {
+      class Book {
+            id: number;
+            osisId: string;
+            name: string;
+            chapters: number;
+
+            constructor(id: number, osisId: string, name: string, chapters: number) {
+                  this.id = id;
+                  this.osisId = osisId;
+                  this.name = name;
+                  this.chapters = chapters;
+            }
+      }
+
+      export function allBooks(): Book[] {
+            return [
+				  {{ range . -}}
+				  new Book({{.ID}}, "{{.OsisID}}", "{{.Name}}", {{.Chapters}}),
+				  {{ end -}}
+            ];
+      }
+}
 `)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	f, err := os.Create("codegen/js/books.js")
+	f, err := os.Create("codegen/ts/books.ts")
 	if err != nil {
 		log.Fatal(err)
 	}

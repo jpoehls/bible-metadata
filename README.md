@@ -29,6 +29,14 @@ Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
 - Added `TotalVerses` and `WordCountKjv` calculated from `Verses.csv` in same repository.
 - Added `ReadingTimeInSecondsKjvScourby` calculated from the KJV narrated by Alexander Scourby (Voice Only, MP3). 
 
+# Codegen
+
+The `./codegen` directory contains generated source code for the above Bible metadata in various languages.
+
+Regenerate those source files by running: `go run codegen.go`
+
+TypeScript output requires `tsc` to be on your PATH. `npm install typescript -g`
+
 # License
 
 Public domain.
