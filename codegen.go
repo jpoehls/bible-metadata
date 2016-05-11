@@ -71,49 +71,49 @@ func genBooksTS() {
 	books := getBooks()
 
 	tmpl, err := template.New("").Parse(`module bibleMetadata {
-      class Book {
-            /**
-             * Gets the numeric ID of the book.
-             *
-             * The ID is a sequential integer matching
-             * the position of the book in the KJV Bible.
-             * E.g., 1 for Genesis and 66 for Revelation
-             */
-            id: number;
-			
-            /**
-             * Gets the OSIS ID of the book.
-             * E.g., "Gen" for Genesis
-             */
-            osisId: string;
-			
-            /**
-             * Gets the name of the book.
-             * E.g., "Genesis"
-             */
-            name: string;
-			
-            /**
-             * Gets the total number of chapters
-             * in the book.
-             */
-            chapters: number;
+	class Book {
+		/**
+		 * Gets the numeric ID of the book.
+		 *
+		 * The ID is a sequential integer matching
+		 * the position of the book in the KJV Bible.
+		 * E.g., 1 for Genesis and 66 for Revelation
+		 */
+		id: number;
 
-            constructor(id: number, osisId: string, name: string, chapters: number) {
-                  this.id = id;
-                  this.osisId = osisId;
-                  this.name = name;
-                  this.chapters = chapters;
-            }
-      }
+		/**
+		 * Gets the OSIS ID of the book.
+		 * E.g., "Gen" for Genesis
+		 */
+		osisId: string;
 
-      export function allBooks(): Book[] {
-            return [
-				  {{ range . -}}
-				  new Book({{.ID}}, "{{.OsisID}}", "{{.Name}}", {{.Chapters}}),
-				  {{ end -}}
-            ];
-      }
+		/**
+		 * Gets the name of the book.
+		 * E.g., "Genesis"
+		 */
+		name: string;
+
+		/**
+		 * Gets the total number of chapters
+		 * in the book.
+		 */
+		chapters: number;
+
+		constructor(id: number, osisId: string, name: string, chapters: number) {
+			this.id = id;
+			this.osisId = osisId;
+			this.name = name;
+			this.chapters = chapters;
+		}
+	}
+
+	export function allBooks(): Book[] {
+		return [
+			{{ range . -}}
+			new Book({{.ID}}, "{{.OsisID}}", "{{.Name}}", {{.Chapters}}),
+			{{ end -}}
+		];
+	}
 }
 `)
 	if err != nil {
