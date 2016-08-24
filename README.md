@@ -27,7 +27,15 @@ Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-
 Initial CSV from [github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-][1].
 
 - Added `TotalVerses` and `WordCountKjv` calculated from `Verses.csv` in same repository.
-- Added `ReadingTimeInSecondsKjvScourby` calculated from the KJV narrated by Alexander Scourby (Voice Only, MP3). 
+- Added `ReadingTimeInSecondsKjvScourby` calculated from the KJV narrated by Alexander Scourby (Voice Only, MP3).
+
+### ProfGrantHorner_Books.csv
+
+Same as `Books.csv` but with an additional `ListID` column that cooresponds to the lists in Professor Grant Horner's Bible Reading System.
+
+### ProfGrantHorner_Lists.csv
+
+Lists and total chapter counts based on Professor Grant Horner's Bible Reading System.
 
 # Codegen
 

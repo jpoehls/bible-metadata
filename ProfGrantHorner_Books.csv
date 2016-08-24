@@ -1,0 +1,67 @@
+ListID,BookID,OsisID,BookName,TotalChapters
+1,40,Matt,Matthew,28
+1,41,Mark,Mark,16
+1,42,Luke,Luke,24
+1,43,John,John,21
+2,1,Gen,Genesis,50
+2,2,Exod,Exodus,40
+2,3,Lev,Leviticus,27
+2,4,Num,Numbers,36
+2,5,Deut,Deuteronomy,34
+3,45,Rom,Romans,16
+3,46,1Cor,1 Corinthians,16
+3,47,2Cor,2 Corinthians,13
+3,48,Gal,Galatians,6
+3,49,Eph,Ephesians,6
+3,50,Phil,Philippians,4
+3,51,Col,Colossians,4
+3,58,Heb,Hebrews,13
+4,52,1Thess,1 Thessalonians,5
+4,53,2Thess,2 Thessalonians,3
+4,54,1Tim,1 Timothy,6
+4,55,2Tim,2 Timothy,4
+4,56,Titus,Titus,3
+4,57,Phim,Philemon,1
+4,59,Jas,James,5
+4,60,1Pet,1 Peter,5
+4,61,2Pet,2 Peter,3
+4,62,1John,1 John,5
+4,63,2John,2 John,1
+4,64,3John,3 John,1
+4,65,Jude,Jude,1
+4,66,Rev,Revelation,22
+5,18,Job,Job,42
+5,21,Eccl,Ecclesiastes,12
+5,22,Song,Song of Solomon,8
+6,19,Ps,Psalms,150
+7,20,Prov,Proverbs,31
+8,6,Josh,Joshua,24
+8,7,Judg,Judges,21
+8,8,Ruth,Ruth,4
+8,9,1Sam,1 Samuel,31
+8,10,2Sam,2 Samuel,24
+8,11,1Kgs,1 Kings,22
+8,12,2Kgs,2 Kings,25
+8,13,1Chr,1 Chronicles,29
+8,14,2Chr,2 Chronicles,36
+8,15,Ezra,Ezra,10
+8,16,Neh,Nehemiah,13
+8,17,Esth,Esther,10
+9,23,Isa,Isaiah,66
+9,24,Jer,Jeremiah,52
+9,25,Lam,Lamentations,5
+9,26,Ezek,Ezekiel,48
+9,27,Dan,Daniel,12
+9,28,Hos,Hosea,14
+9,29,Joel,Joel,3
+9,30,Amos,Amos,9
+9,31,Obad,Obadiah,1
+9,32,Jonah,Jonah,4
+9,33,Mic,Micah,7
+9,34,Nah,Nahum,3
+9,35,Hab,Habakkuk,3
+9,36,Zeph,Zephaniah,3
+9,37,Hag,Haggai,2
+9,38,Zech,Zechariah,14
+9,39,Mal,Malachi,4
+10,44,Acts,Acts,28
